@@ -1,0 +1,13 @@
+nano /etc/openvpn/server.conf
+
+#Add these to the end of the file:
+
+log /dev/null
+
+status /dev/null
+
+#Also change verb 3 to verb 0.
+
+#Then you will need to restart OpenVPN with Putty or VNC
+
+service openvpn restart
