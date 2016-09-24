@@ -1,0 +1,7 @@
+Hey!
+
+If you are running my OpenVPN installation script on a LowEndSpirit.com VPS, you are going to need one last thing. The script can't reliably detect a NAT and doesn't really know what IP to put on the client.conf so your client can't connect.
+
+If your VPS is behind a NAT (as happens with LowEndSpirit), you need to manually edit the generated client.conf file and set the external IPv4 on the "remote" line. The rest of the setup it's automated as long as you specified the correct port :)
+
+Have a nice day.
